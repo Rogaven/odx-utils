@@ -1,0 +1,8 @@
+deploy:
+  provider: rubygems
+  api_key:
+    secure: Q+p2Xbyr+7wB4+TpViPMjFdjnLullc+buDBEXKrKBhPxM6XWg9kwiSNT6WXGI3JrPyrAqksEjAiydsFSftULfKRM0U71LBxi1WG3yliYa9WzaqAqf8i6gSrLCRVLA7QeKv/5Fr7a0OmYznTb4IAUdZ8bbTG7ZlzeE6Z3NTWlgoc=
+  gem: odx
+  on:
+    tags: true
+    repo: Rogaven/odx-utils

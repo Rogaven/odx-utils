@@ -3,6 +3,7 @@
 ODX Command Line Utils
 
 [![Gem Version](https://badge.fury.io/rb/odx.svg)](http://badge.fury.io/rb/odx)
+[![Build Status](https://travis-ci.org/Rogaven/odx-utils)](https://travis-ci.org/Rogaven/odx-utils)
 
 ### Utilities
 
