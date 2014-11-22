@@ -1,5 +1,4 @@
 # ODX Utils
-
 [![Gem Version](https://badge.fury.io/rb/odx.svg)](http://badge.fury.io/rb/odx)
 =========
 ODX Command Line Utils
