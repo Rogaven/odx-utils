@@ -18,5 +18,5 @@ ODX Command Line Utils
 ### Install
 
 ```
-  $ [sudo] gem install odx
+  $ [sudo] gem install odx --no-wrapper
 ```
