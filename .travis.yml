@@ -5,4 +5,5 @@ deploy:
   gem: odx
   on:
     tags: true
+    all_branches: true
     repo: Rogaven/odx-utils
