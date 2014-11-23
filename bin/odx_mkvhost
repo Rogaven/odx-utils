@@ -22,8 +22,6 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-set -x
-
 function makeA2VhostMacro { # $PATH
   _PATH=$1;
   cat <<EOF > $_PATH
