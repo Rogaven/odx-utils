@@ -24,7 +24,7 @@
 
 ip=$(ifconfig en0 inet); ip=${ip##*inet }; 
 
-if [ $ip ]; then
+if [ "$ip" ]; then
     echo ${ip%% *}
 else
     echo $(ifconfig eth0 | grep inet | awk '{print $2}' | sed 's/addr://' | grep .);
