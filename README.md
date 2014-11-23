@@ -67,3 +67,16 @@ ODX Command Line Utils
 ```bash 
   odx_usr  ## -- Show current user's name 
 ``` 
+
+## Contributing
+
+Feel free to use the Github issue tracker and pull requests to discuss and
+submit code changes.
+
+
+## License
+
+ODX Utils are made available under the terms of the MIT License.  See the
+LICENSE file that accompanies this distribution for the full text of the
+license.
+
