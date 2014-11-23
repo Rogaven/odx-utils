@@ -41,5 +41,5 @@ if [ "$NAME" ]; then
         nano $FILE;
     fi
 else 
-    echo "Usage: `basename $0` [script_name]";
+    echo "Usage: `basename $0` <script_name>";
 fi

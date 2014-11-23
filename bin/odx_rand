@@ -32,5 +32,5 @@ if [ "$SIZE" ]; then
         openssl rand -hex $(($SIZE/2)) 
     fi  
 else 
-    echo "Usage: `basename $0` size [file]";
+    echo "Usage: `basename $0` <size> [file]";
 fi

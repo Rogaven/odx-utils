@@ -29,5 +29,5 @@ if [ "$FILE" ]; then
     _sz=${_ln[3]} 
     echo $_sz 
 else
-    echo "Usage: `basename $0` [file]";
+    echo "Usage: `basename $0` <file>";
 fi
