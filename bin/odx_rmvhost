@@ -1,0 +1,49 @@
+#!/bin/bash
+
+# The MIT License (MIT)
+#
+# Copyright (c) 2014 root
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the Software), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED AS IS, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+
+## Main
+if [ ! "$1" ]; then
+  echo "Usage : `basename $0` <domain>"
+else
+  a2dissite $1.conf
+  
+  NG_ENABLED_CONF_PATH=/etc/nginx/sites-enabled
+  if [[ -e $NG_ENABLED_CONF_PATH/$1.conf ]]; then
+    rm -f $NG_ENABLED_CONF_PATH/$1.conf
+  fi
+
+  NG_AVAIL_CONF_PATH=/etc/nginx/sites-available
+  if [[ -e $NG_AVAIL_CONF_PATH/$1.conf ]]; then
+    rm -f $NG_AVAIL_CONF_PATH/$1.conf
+    echo "To deactivate the configuration, you need to run:"
+    echo "sudo service nginx reload"
+  fi
+
+  A2_AVAIL_CONF_PATH=/etc/apache2/sites-available
+  if [[ -e $A2_AVAIL_CONF_PATH/$1.conf ]]; then
+    rm -f $A2_AVAIL_CONF_PATH/$1.conf
+    echo "To deactivate the configuration, you need to run:"
+    echo "sudo service apache2 reload"
+  fi
+fi
