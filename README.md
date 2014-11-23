@@ -7,50 +7,50 @@ ODX Command Line Utils
 
 ## Utilities
 
-- `odx_mkscript` - create stub of shell script
-- `odx_rand` - generate random string or file
-- `odx_getip` - show current machine's ip
-- `odx_shlog` - show filtered bash history
-- `odx_sz` - show size of file 
-- `odx_date` - show current date
-- `odx_usr` - show current user's name
+- [`odx_mkscript`](#mkscript) - create stub of shell script
+- [`odx_rand`](#rand) - generate random string or file
+- [`odx_getip`](#getip) - show current machine's ip
+- [`odx_shlog`](#shlog) - show filtered bash history
+- [`odx_sz`](#sz) - show size of file 
+- [`odx_date`](#date) - show current date
+- [`odx_usr`](#usr) - show current user's name
 
 ## Install
 
 ```bash
-  $ [sudo] gem install odx --no-wrapper
+$ [sudo] gem install odx --no-wrapper
 ```
 
 ## Usage
 
 ### mkscript
 ```bash 
-  odx_mkscript <filename>  ## -- Create stub of shell script at /usr/local/bin
+$ odx_mkscript <filename>  ## -- Create stub of shell script at /usr/local/bin
 ``` 
 
 ### rand
 ```bash 
-  odx_rand <size> [filepath]  ## -- Generate random string of specified size
+$ odx_rand <size> [filepath]  ## -- Generate random string of specified size
 ``` 
 
 ### getip
 ```bash 
-  odx_getip  ## -- Show current machine's IP
+$ odx_getip  ## -- Show current machine's IP
 ``` 
 
 ### shlog
 ```bash 
-  odx_shlog [filter]  ## -- Show filtered (if specified) bash history
+$ odx_shlog [filter]  ## -- Show filtered (if specified) bash history
 ``` 
 
 ### sz
 ```bash 
-  odx_sz <filepath>  ## -- Show size of specified file
+$ odx_sz <filepath>  ## -- Show size of specified file
 ``` 
 
 ### date
 ```bash 
-  odx_date [filter]  ## -- Show current date
+$ odx_date [filter]  ## -- Show current date
   
   ## Params:
   ## - dt, date    date 
@@ -65,7 +65,7 @@ ODX Command Line Utils
 
 ### usr
 ```bash 
-  odx_usr  ## -- Show current user's name 
+$ odx_usr  ## -- Show current user's name 
 ``` 
 
 ## Contributing
