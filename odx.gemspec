@@ -3,8 +3,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |s|
   s.name        = 'odx'
-  s.version     = '0.0.3'
-  s.date        = '2014-11-22'
+  s.version     = '0.0.4'
   s.summary     = "ODX Utils"
   s.description = "ODX Utils for Server"
   s.authors     = ["Alex Nazaroff"]
